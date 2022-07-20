@@ -1,0 +1,40 @@
+<html> 
+    <head>
+        <title>Demo JQ</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+              $("#TextFocus").focus(function(){
+                $(this).css("background-color","blue");
+              });
+              
+            
+              $("#TextBlur").blur(function(){
+                $(this).css("background-color","red");
+              });
+              
+              $("#TextKP").keypress(function(){
+                alert($(this).val());
+              });
+             
+              $("#TextKU").keyup(function(){
+                alert($(this).val());
+              });
+              
+
+            });
+
+
+        </script>
+    </head>
+    <body>
+        <center>
+        <input type="text" id="TextFocus" placeholder="Check Text Box Focus Event.."><hr>
+        <input type="text" id="TextBlur" placeholder="Check Text Box Blur Event.."><hr>
+        <input type="text" id="TextKP" placeholder="Check Text Box KP Event.."><hr>
+        <input type="text" id="TextKU" placeholder="Check Text Box KU Event.."><hr>
+    </center>
+    </body>
+</html>

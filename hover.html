@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liast</title>
+    <style>
+        .main li ol li {display: none;}
+        .main li:hover ol li {display: block;}
+        .main li ol li ul {display: none;}
+        .main li ol li:hover ul{display: block;}
+        .main li ol li ul ol{display: none;}
+        .main li ol li ul:hover ol {display: block;}
+        .main{
+            background-color: rgb(251, 255, 255);
+        }
+        ol{
+            background-color: rgb(196, 160, 191)
+        }
+        /* ul{
+            background-color: lightblue;
+        } */
+    </style>
+</head>
+<body>
+    <ul class="main">
+        <li>Google
+            <ol>
+                <li>G-mail
+                    <ul>
+                        <li>Sing-in</li>
+                        <li>Sing-out</li>
+                        <ol>
+                            <li>Sign as Admin</li>
+                            <li>Sign as student</li>
+                        </ol>
+                    </ul>
+                </li>
+                <li>Youtub</li>
+                <li>Google-map</li>
+            </ol>
+        </li>
+        <li>
+            Meta
+            <ol>
+                <li>Facebook</li>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Whatsapp</li>
+                </ul>
+            </ol>
+        </li>
+        <li>Amazon
+            <ol>
+                <li>AWS</li>
+                <ul>
+                    <li>Add to cart</li>
+                    <li>Order</li>
+                </ul>
+            </ol>
+        </li>
+        <li>Microsoft
+            <ol>
+                <li>Microsoft Office</li>
+                <li>Microsoft Web</li>
+            </ol>
+        </li>
+
+    </ul>
+</body>
+</html>

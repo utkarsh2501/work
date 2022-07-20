@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+</head>
+<body>
+    <center>
+    <h1> Silver Oak College of Engineering and Technology</h1>
+    <h1> 5 <sup>th</sup>IT-C</h1>
+    <table border="1px" style="text-align: center;">
+
+
+    <tr style="background-color: yellow ;">
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+    
+    </tr>
+    <tr>
+        <th>8:30 - 9:20</th>
+        <td rowspan="2">CS</td>
+        <td rowspan="2">AWT</td>
+        <td>AWT</td>
+        <td rowspan="2">AWT</td>
+        <td rowspan="2">AWT</td>
+        <td>AWT</td>   
+    </tr>
+    <tr>
+        <th>9:20 - 10:10</th>
+        <td>AWT</td>
+        <td>AWT</td>   
+    </tr>
+    <tr>
+        <th>10:10 - 10:20</th>
+        <td colspan="6">Recess</td>
+        
+    </tr>
+    <tr>
+        <th>10:20 - 11:10</th>
+        <td>AWT</td>
+        <td>AWT</td>
+        <td rowspan="2">AWT</td>
+        <td>AWT</td>
+        <td>AWT</td>
+        <td rowspan="2">AWT</td>   
+    </tr>
+    <tr>
+        <th>11:10 - 12:00</th>
+        <td>AWT</td>
+        <td>AWT</td>
+        <td>AWT</td>
+        <td>AWT</td>   
+    </tr>
+    <tr>
+        <th>12:00 - 12:20</th>
+        <td colspan="6">Recess</td>  
+    </tr>
+    <tr>
+        <th>12:20 - 01:10</th>
+        <td rowspan="2">AWT</td>
+        <td rowspan="2">NT</td>
+        <td>CS</td>
+        <td>CS</td>
+        <td rowspan="2">SE</td>
+        <td rowspan="2">ADA</td>   
+    </tr>
+    <tr>
+        <th>01:10 - 02:00</th>
+        <td>ADA</td>
+        <td>ADA</td>
+    </tr>
+    <tr>
+        <th>02:00 - 02:10</th>
+        <td colspan="6">Recess</td>  
+    </tr>
+    <tr>
+        <th>02:10 - 03:00</th>
+        <td>ADA</td>
+        <td>CS</td>
+        <td>SE</td>
+        <td>NT</td>
+        <td>ADA</td>
+        <td>ABPS</td>   
+    </tr>
+  
+</table>
+</center>
+</body>
+</html>

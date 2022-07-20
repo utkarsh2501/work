@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luist example</title>
+</head>
+<body>
+    <fieldset>
+        <legend style="text-align: center;">Registratiion Form</legend><br><br>
+
+        
+        Enter your first name : <input type="text" name="fname" id="" autofocus placeholder="enter your first name"><br><br>
+        Enter your last name : <input type="text" name="lname" id="" placeholder="enter your first name"><br><br>
+        Enter your email : <input type="email" name="email" id="" placeholder="enter your email"><br><br>
+        Enter your phone number : <input type="text" name="phone number" id="" placeholder="enter your email"><br><br>
+        Enter your adress : <textarea name="text" id="" cols="20" rows="5"></textarea> <br><br>
+        Enter your password : <input type="password" name="password" id="" placeholder="enter your password"><br><br>
+        Enter confirm password : <input type="password" name="cpassword" id="" placeholder="enter your password"><br><br>
+        Gender:
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">male</label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">female</label>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">trans</label><br><br>
+        Date of birth : <input type="date"><br>
+        select favorite color : <input type="color"><br>\
+        <center> <button style="background-color:red ;">sign up</button></center>
+       
+    </fieldset>
+</body>
+</html>

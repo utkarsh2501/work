@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+    <script>
+        var $BankNumber = /^([0-9]{9,18})$/;
+        $(document).ready(function () {
+
+            $("#txtbox").blur(function () {
+                $("TxtNumberValidation").empty();
+                if ($(this).val() == "" || $(this).val() == null) {
+                    $("#TxtNumberValidation").html("(*) Name Required..!!");
+                }
+                else {
+                    if (!$(this).val().match($BankNumber)) {
+                        $("#TxtNumberValidation").html("(*) Invalid Number..!!");
+                    }
+                }
+            });
+            $("#txtbox").keypress(function (e) {
+                $("#TxtNumberValidation").empty();
+                var Flag = ((e.which >= 48 && e.which <= 57));
+                if (Flag == false) {
+                    $("#TxtNumberValidation").html("Invalid Input..!!");
+                }
+                return Flag;
+            });
+
+
+        });
+        var $Name = /^([0-9]{9,18})$/;
+        $(document).ready(function () {
+            $("#txtname").blur(function () {
+                $("txtnameValidation").empty();
+                if ($(this).val() == "" || $(this).val() == null) {
+                    $("#TxtnameValidation").html("(*) Name Required..!!");
+                }
+                else {
+                    if (!$(this).val().match($BankNumber)) {
+                        $("#TxtnameValidation").html("(*) Invalid Number..!!");
+                    }
+                }
+            });
+            $("#txtname").keypress(function (e) {
+                $("#TxtnameValidation").empty();
+                var Flag = ((e.which >= 65 && e.which <= 90 || e.which >= 65 && e.which <= 90));
+                if (Flag == false) {
+                    $("#TxtnameValidation").html("Invalid Input..!!");
+                }
+                return Flag;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <label>Bnak Acount Number</label>
+    <input type="text" placeholder="Enter Number" id="txtbox" maxlength="18" /><br />
+    <small id="TxtNumberValidation" style="color: red;"></small><br>
+    <label>Name</label>
+    <input type="text" placeholder="Enter Name" id="txtname" maxlength="15" /><br />
+    <small id="TxtnameValidation" style="color: red;"></small>
+
+</body>
+
+</html>

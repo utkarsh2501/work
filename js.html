@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Example</title>
+</head>
+<body>
+    <div id="ol">Hello This is Aakash world</div>
+    <br>
+    <input type="button" value="Alert Inline " onclick="alert('Hello Guys')">
+    <input type="button" value="Confirm" onclick="confirm('Hello Guys')">
+    <input type="button" value="Prompt " onclick="prompt('Hello Guys')">
+
+<hr>
+    <input type="button" value="Alert Iternel" onclick="demoInternalAlert()">&nbsp;
+    <input type="button" value="Confirm internel" onclick="demoInternalConfirm()">&nbsp;
+    <input type="button" value="Prompt internel" onclick="demoInternalPrompt()">&nbsp;
+
+    <script type="text/Javascript">
+        function demoInternalAlert() {
+            alert("Internl Alert");
+
+            
+        }
+        function demoInternalConfirm() {
+            if (confirm("are you sure....??")){
+                alert("yes");
+
+            }else{
+                alert("noo");
+            }
+        }
+        function demoInternalPrompt() {
+            var fName= prompt("Enter Firstname here..");
+            var lName= prompt ("Enter Lastname");
+            alert (fName+ " " + lName)
+        }
+    </script>
+</body>
+</html>
